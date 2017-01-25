@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PostgreSQL - videogamesDB@172.31.73.191">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.6">
+    <database id="1" name="videogamesDB">
+      <object-id>41083</object-id>
+      <visible>1</visible>
+    </database>
+    <database id="2" name="postgres">
+      <object-id>12453</object-id>
+    </database>
+    <database id="3" name="jerry">
+      <object-id>16384</object-id>
+    </database>
+    <database id="4" name="movieDB">
+      <object-id>24577</object-id>
+    </database>
+    <database id="5" name="m06moviedb">
+      <object-id>49275</object-id>
+    </database>
+    <database id="6" name="bibilioteca">
+      <object-id>57579</object-id>
+    </database>
+    <database id="7" name="biblioteca">
+      <object-id>57580</object-id>
+    </database>
+    <schema id="8" parent="1" name="public">
+      <object-id>2200</object-id>
+      <visible>1</visible>
+      <introspection-state-number>10510</introspection-state-number>
+      <introspection-timestamp>2017-01-25.17:01:12.770</introspection-timestamp>
+    </schema>
+    <schema id="9" parent="1" name="pg_catalog">
+      <object-id>11</object-id>
+    </schema>
+    <schema id="10" parent="1" name="pg_toast">
+      <object-id>99</object-id>
+    </schema>
+    <schema id="11" parent="1" name="pg_temp_1">
+      <object-id>11816</object-id>
+    </schema>
+    <schema id="12" parent="1" name="pg_toast_temp_1">
+      <object-id>11817</object-id>
+    </schema>
+    <schema id="13" parent="1" name="information_schema">
+      <object-id>12161</object-id>
+    </schema>
+    <sequence id="14" parent="8" name="serial">
+      <object-id>41084</object-id>
+      <state-number>7995</state-number>
+    </sequence>
+    <table id="15" parent="8" name="videogame">
+      <object-id>73930</object-id>
+      <state-number>10510</state-number>
+    </table>
+    <column id="16" parent="15" name="id">
+      <state-number>10510</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;serial&apos;::regclass)</default-expression>
+    </column>
+    <column id="17" parent="15" name="title">
+      <state-number>10510</state-number>
+      <data-type>varchar(20)|0</data-type>
+      <default-expression>NULL::character varying</default-expression>
+    </column>
+    <column id="18" parent="15" name="players">
+      <state-number>10510</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="19" parent="15" name="price">
+      <state-number>10510</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <index id="20" parent="15" name="videogame_pkey">
+      <object-id>73935</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="21" parent="15" name="videogame_pkey">
+      <object-id>73936</object-id>
+      <columns>id</columns>
+      <underlying-index>videogame_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

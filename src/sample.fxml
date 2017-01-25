@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.102-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="485.0" prefWidth="690.0">
+         <children>
+            <Label layoutX="34.0" layoutY="25.0" prefHeight="16.0" prefWidth="626.0" text="LIBRERIA VIDEOJUEGOS" />
+            <ListView fx:id="videogamesLV" layoutX="34.0" layoutY="68.0" prefHeight="364.0" prefWidth="171.0" />
+            <Button fx:id="listAll" layoutX="216.0" layoutY="68.0" mnemonicParsing="false" onAction="#onListAll" text="Listar todos los videojuegos" />
+            <Button fx:id="addButton" layoutX="216.0" layoutY="290.0" mnemonicParsing="false" onAction="#OnAddVideogames" prefHeight="33.0" prefWidth="171.0" text="Añadir videojuego" />
+            <TextField fx:id="titleName" layoutX="216.0" layoutY="340.0" promptText="Nombre" />
+            <TextField fx:id="titlePlayers" layoutX="216.0" layoutY="374.0" promptText="Num jugadores" />
+            <TextField fx:id="titlePrice" layoutX="216.0" layoutY="406.0" promptText="Precio" />
+            <Button fx:id="borrador" layoutX="216.0" layoutY="111.0" mnemonicParsing="false" onAction="#onDelete" text="Borra el videojoc seleccionat" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
