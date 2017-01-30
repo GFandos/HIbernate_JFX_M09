@@ -7,12 +7,14 @@ public class Videogame {
     private String title;
     private int players;
     private int price;
+    private int company;
 
     public Videogame() {}
-    public Videogame(String title_, int players_, int price_) {
+    public Videogame(String title_, int players_, int price_, int company_) {
         this.title = title_;
         this.players = players_;
         this.price = price_;
+        this.company = company_;
     }
     public int getId() {
         return id;
@@ -43,5 +45,13 @@ public class Videogame {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    public int getCompany() {
+        return company;
+    }
+
+    public void setCompany(int company) {
+        this.company = company;
     }
 }
