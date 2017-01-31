@@ -141,6 +141,7 @@ public class ManageVideogame {
         try{
             tx = session.beginTransaction();
             Companies c = new Companies(name);
+            System.out.println("Name = " +name);
             companyID = (Integer) session.save(c);
             tx.commit();
         }catch (HibernateException e) {

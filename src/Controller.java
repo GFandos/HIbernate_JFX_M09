@@ -152,7 +152,6 @@ public class Controller {
         companyLV.getSelectionModel().selectedItemProperty().addListener(
                 (observable, oldValue, newValue) -> {
                     System.out.println("ListView Selection Changed (selected: " + newValue.toString() + ")");
-                    borrador.setVisible(true);
 
                 }
         );
@@ -189,7 +188,7 @@ public class Controller {
         String name;
 
         if(!companyName.getText().isEmpty()) {
-            name = titleName.getText();
+            name = companyName.getText();
 
         } else {
             JOptionPane.showMessageDialog(null, "Nombre no puede ser un campo vacio.");

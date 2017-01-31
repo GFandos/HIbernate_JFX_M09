@@ -26,7 +26,7 @@
             <TextField fx:id="titleName" layoutX="216.0" layoutY="422.0" promptText="Nombre" />
             <TextField fx:id="titlePlayers" layoutX="216.0" layoutY="458.0" promptText="Num jugadores" />
             <TextField fx:id="titlePrice" layoutX="216.0" layoutY="496.0" promptText="Precio" />
-            <Button fx:id="borrador" layoutX="216.0" layoutY="111.0" mnemonicParsing="false" onAction="#onDelete" text="Borra el videojoc seleccionat" visible="false" />
+            <Button fx:id="borrador" layoutX="34.0" layoutY="566.0" mnemonicParsing="false" onAction="#onDelete" prefHeight="26.0" prefWidth="106.0" text="Borra" />
             <TextField fx:id="companyId" layoutX="216.0" layoutY="532.0" promptText="Compañia" />
             <Button fx:id="addCompanyButton" layoutX="422.0" layoutY="378.0" mnemonicParsing="false" onAction="#onAddCompany" prefHeight="33.0" prefWidth="171.0" text="Añadir compañia" />
             <ListView fx:id="companyLV" layoutX="588.0" layoutY="56.0" prefHeight="200.0" prefWidth="200.0" />
